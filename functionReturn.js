@@ -7,3 +7,6 @@ var helloWorld = function(){
 console.log(helloWorld);
 console.log(helloWorld());
 console.log(helloWorld()());
+
+var mensagem = helloWorld();
+console.log(mensagem());
