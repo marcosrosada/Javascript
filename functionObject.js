@@ -25,6 +25,6 @@ var person2 = {
 }
 
 console.log("=============================================");
-console.log(person);
-console.log(person.getAge);
-console.log(person.getAge());
+console.log(person2);
+console.log(person2.getAge);
+console.log(person2.getAge());
