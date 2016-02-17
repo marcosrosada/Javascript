@@ -1,3 +1,4 @@
+console.log("\nFunction inside of the Object");
 var person = {
 	name : "John",
 	age	: 25,
@@ -24,7 +25,7 @@ var person2 = {
 	getAge : getAge
 }
 
-console.log("=============================================");
+console.log("\nFunction external of the Object");
 console.log(person2);
 console.log(person2.getAge);
 console.log(person2.getAge());

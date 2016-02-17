@@ -1,5 +1,5 @@
 // Factory Function
-console.log("Factory Function");
+console.log("\nFactory Function");
 
 var createPerson = function(name, age){
 	return {
@@ -13,7 +13,7 @@ console.log(createPerson("Mark", 28));
 
 
 // Function Contructor
-console.log("Function Contructor");
+console.log("\nFunction Contructor");
 
 var Person = function(name, age){
 	this.name = name;
