@@ -51,10 +51,18 @@ console.log(country);
 // [ 'USA', 'Germany', 'Brazil' ]
 
 
-country.push("Netherlands");
-country.push("England");
-
-
 console.log("\n- slice");
-console.log(country.slice(1, 4));
-// [ 'USA', 'Netherlands', 'Brazil' ]
+console.log(country.slice(0, 2));
+// [ 'USA', 'Germany' ]
+
+
+console.log("\n- reverse");
+console.log(country.reverse());
+// [ 'Brazil', 'Germany', 'USA' ]
+
+console.log(country.reverse());
+
+
+console.log("\n- sort");
+console.log(country.sort());
+// [ 'Brazil', 'Germany', 'USA' ]
