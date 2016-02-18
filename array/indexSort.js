@@ -6,7 +6,7 @@ var country = [
 
 var resultAsc = country.sort(function(a, b){
 	return a.population - b.population;
-}, 0);
+});
 
 console.log("Result Asc\n", resultAsc);
 /*[ { name: 'Germany', population: 80000 },
@@ -15,7 +15,7 @@ console.log("Result Asc\n", resultAsc);
 
 var resultDesc = country.sort(function(a, b){
 	return b.population - a.population;
-}, 0);
+});
 
 console.log("\nResult Desc\n", resultDesc);
 /*[ { name: 'USA', population: 318000 },

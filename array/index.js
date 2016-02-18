@@ -59,10 +59,10 @@ console.log(country.slice(0, 2));
 console.log("\n- reverse");
 console.log(country.reverse());
 // [ 'Brazil', 'Germany', 'USA' ]
-
 console.log(country.reverse());
 
 
 console.log("\n- sort");
-console.log(country.sort());
+country.sort();
+console.log(country);
 // [ 'Brazil', 'Germany', 'USA' ]
