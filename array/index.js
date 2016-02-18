@@ -66,3 +66,15 @@ console.log("\n- sort");
 country.sort();
 console.log(country);
 // [ 'Brazil', 'Germany', 'USA' ]
+
+
+console.log("\n- join");
+var join = country.join(";");
+console.log(join);
+// Brazil;Germany;USA
+
+
+console.log("\n- split");
+var split = join.split(";");
+console.log(split);
+// [ 'Brazil', 'Germany', 'USA' ]
