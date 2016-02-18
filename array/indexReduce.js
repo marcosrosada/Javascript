@@ -9,4 +9,4 @@ var result = country.reduce(function(previous, current){
 }, 0);
 
 console.log("Result name:", result);
-// 
+// 598000
