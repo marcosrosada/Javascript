@@ -15,6 +15,7 @@ country.pop("Netherlands");
 console.log(country);
 // [ 'USA', 'Germany', 'Brazil' ]
 
+
 console.log("\n- unshift");
 country.unshift("Netherlands");
 console.log(country);
@@ -27,14 +28,24 @@ console.log(country);
 // [ 'USA', 'Germany', 'Brazil' ]
 
 
-console.log("\n- indexOf");
+console.log("\n- indexOf [ Brazil ]");
 console.log(country.indexOf("Brazil"));
 // 2
 
 
-console.log("\n- splice");
+console.log("\n- splice removing");
 country.splice(1, 1);
 console.log(country);
 // [ 'USA', 'Brazil' ]
 
-//console.log(country.splice(1, 1));
+
+console.log("\n- splice adding");
+country.splice(1, 0, "Germany");
+console.log(country);
+// [ 'USA', 'Germany', 'Brazil' ]
+
+
+console.log("\n- splice updating");
+country.splice(1, 1, "Netherlands");
+console.log(country);
+// [ 'USA', 'Netherlands', 'Brazil' ]
