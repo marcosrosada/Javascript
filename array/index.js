@@ -33,6 +33,12 @@ console.log(country.indexOf("Brazil"));
 // 2
 
 
+console.log("\n- splice updating");
+country.splice(1, 1, "Netherlands");
+console.log(country);
+// [ 'USA', 'Netherlands', 'Brazil' ]
+
+
 console.log("\n- splice removing");
 country.splice(1, 1);
 console.log(country);
@@ -45,7 +51,10 @@ console.log(country);
 // [ 'USA', 'Germany', 'Brazil' ]
 
 
-console.log("\n- splice updating");
-country.splice(1, 1, "Netherlands");
-console.log(country);
+country.push("Netherlands");
+country.push("England");
+
+
+console.log("\n- slice");
+console.log(country.slice(1, 4));
 // [ 'USA', 'Netherlands', 'Brazil' ]
