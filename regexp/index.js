@@ -22,7 +22,7 @@ console.log("TEST:", regExp.test(phone));
 
 
 // Add ^ to Start and $ end
-regExp	= /^\([0-9][0-9]\) [0-9][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]$/;
+regExp	= /^\([0-9]{2}\) [0-9]{4}-[0-9]{4}$/;
 phone 	= "(48) 9876-1234";
 
 console.log("\nEXEC:", regExp.exec(phone));
