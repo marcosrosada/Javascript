@@ -69,9 +69,23 @@ console.log("\nTEST:", regExp.test(phone));
 console.log("EXEC:", regExp.exec(phone));
 
 
-// Inside a context HTML in multiple cases
+// Replace from Group to \d and Space to \s
 regExp	= /<table><tr>(<td>\(\d{2}\)\s\d{4,5}-?\d{4}<\/td>)+<\/tr><\/table>/;
 phone 	= "<table><tr><td>(80) 999778899</td><td>(90) 99897-8877</td><td>(70) 98767-9999</td></tr></table>";
 
 console.log("\nTEST:", regExp.test(phone));
 console.log("EXEC:", regExp.exec(phone));
+
+
+// Match strategy
+regExp	= /\(\d{2}\)\s\d{4,5}-?\d{4}/;
+phone 	= "<table><tr><td>(80) 999778899</td><td>(90) 99897-8877</td><td>(70) 98767-9999</td></tr></table>";
+
+console.log("\nMATCH:", phone.match(regExp));
+
+
+// Match strategy with param G and returning Array
+regExp	= /\(\d{2}\)\s\d{4,5}-?\d{4}/g;
+phone 	= "<table><tr><td>(80) 999778899</td><td>(90) 99897-8877</td><td>(70) 98767-9999</td></tr></table>";
+
+console.log("\nMATCH:", phone.match(regExp));
