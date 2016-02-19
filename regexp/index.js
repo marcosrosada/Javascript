@@ -67,3 +67,11 @@ phone 	= "<table><tr><td>(80) 999778899</td><td>(90) 99897-8877</td><td>(70) 987
 
 console.log("\nTEST:", regExp.test(phone));
 console.log("EXEC:", regExp.exec(phone));
+
+
+// Inside a context HTML in multiple cases
+regExp	= /<table><tr>(<td>\(\d{2}\)\s\d{4,5}-?\d{4}<\/td>)+<\/tr><\/table>/;
+phone 	= "<table><tr><td>(80) 999778899</td><td>(90) 99897-8877</td><td>(70) 98767-9999</td></tr></table>";
+
+console.log("\nTEST:", regExp.test(phone));
+console.log("EXEC:", regExp.exec(phone));
