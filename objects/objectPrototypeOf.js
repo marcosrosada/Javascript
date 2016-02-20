@@ -1,5 +1,5 @@
 var man = {
-	sex: "male"
+	gender: "male"
 };
 
 var person = {
@@ -9,13 +9,13 @@ var person = {
 
 Object.setPrototypeOf(person, man);
 
-console.log(person.sex);
+console.log(person.gender);
 
 console.log("\nObject Keys", Object.keys(person));
 
 for(var property in person){
-	/*if (!person.hasOwnProperty(property))
-		continue;*/
+	if (!person.hasOwnProperty(property))
+		continue;
 
 	console.log(property);
 }

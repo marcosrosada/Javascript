@@ -1,5 +1,5 @@
 var man = {
-	sex: "male"
+	gender: "male"
 };
 
 var person = {
@@ -8,4 +8,4 @@ var person = {
 	__proto__: man
 };
 
-console.log(person.sex);
+console.log(person.gender);
