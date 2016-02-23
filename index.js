@@ -24,7 +24,7 @@ var callSomething = function (value){
         	throw new ClassError("Value is undefined");
 	}
     catch(err) {
-        console.log("Catch: [ " + value + " ] " + err.message);
+        console.log(err.name + " Catch: [ " + value + " ] " + err.message );
     }
     finally {
         console.log("Finally clean up something\n");
